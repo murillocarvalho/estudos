@@ -6,3 +6,13 @@ de vezes que ele aparece como valor.
 Exemplo de entrada: "banana"
 Exemplo de saída: {"b": 1, "a": 3, "n": 2}
 """
+
+user_data = input("Digite alguma coisa: ")
+saida = {}
+for letra in user_data:
+    if letra in saida:
+        saida[letra] += 1
+    else:
+        saida.update({letra: 1})
+
+print(saida)
